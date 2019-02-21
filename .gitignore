@@ -5,5 +5,4 @@ README.md
 node_modules/
 package.json
 public/
-src/
 yarn.lock
