@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Cell} from 'react-mdl';
+import faker from 'faker';
 
 class Landing extends Component {
     render (){
@@ -7,11 +8,9 @@ class Landing extends Component {
             <div style ={{width: '100%',  margin: 'auto'}}>
                 <Grid className="landing-grid">
                     <Cell col={12}>
-                        <img
-                            src="https://store.playstation.com/store/api/chihiro/00_09_000/container/US/en/99/UP2538-CUSA05620_00-AV00000000000124//image?_version=00_09_000&platform=chihiro&w=720&h=720&bg_color=000000&opacity=100"
-                            alt="avatar"
-                            className="avatar-img"
-                        />
+                        <a href="/" className="avatar">
+                            <img alt="avatar" src={faker.image.avatar()}/>
+                        </a>
                         <div className="banner-text">
                             <h1>Front End Web Developer</h1>
 
@@ -33,6 +32,14 @@ class Landing extends Component {
                                 {/* Freecodecamp*/}
                                 <a href="http://google.com" rel="noopener noreferrer" target="_blank" >
                                     <i className="fa fa-free-code-camp"  aria-hidden="true"></i>
+                                </a>
+                                {/* Facebook*/}
+                                <a href="http://google.com" rel="noopener noreferrer" target="_blank" >
+                                    <i className="fa fa-facebook-square"  aria-hidden="true"></i>
+                                </a>
+                                {/* CodePen*/}
+                                <a href="http://google.com" rel="noopener noreferrer" target="_blank" >
+                                    <i class="fa fa-codepen" aria-hidden="true"></i>
                                 </a>
 
 
