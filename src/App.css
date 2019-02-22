@@ -16,9 +16,47 @@
   height: 100%;
 
 }
+.projects-grid{
+  display: flex;
+}
+
+/*contact page css*/
+.contact-body {
+  margin: auto;
+  background: lightgrey;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+
+}
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 550px;
+  color: black;
+  border: 2px solid blue;
+  margin-bottom: 20px;
+
+}
+.contact-grid p {
+  font-family: 'Oxygen', sens-serif;
+  font-weight: bold;
+}
+.contact-grid hr{
+  border-top: 5px double black;
+  width: 50%;
+  margin: auto;
+}
+.contact-list i {
+  padding-right: 1em;
+}
+
 .avatar img {
   height: 250px;
-  padding-top: 5em;
+  padding-top: 5px;
 }
 .banner-text {
   background-color: lightgray;

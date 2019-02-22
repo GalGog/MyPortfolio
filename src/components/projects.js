@@ -10,8 +10,10 @@ class Projects extends Component {
     ToggleCategories (){
     if (this.state.activeTab === 0) {
         return (
+            <div className="projects-grid">
+                {/*Project1*/}
             <Card shadow={0} style={{width: '450', margin: 'auto'}}>
-                <CardTitle style={{color: '#fff', height: '176px', background: 'url(http://www.e2matrix.com/blog/wp-content/uploads/2017/12/html-css.jpg) center / cover'}}>HTML/CSS Project</CardTitle>
+                <CardTitle style={{color: '#fff', height: '176px', background: 'url(http://www.e2matrix.com/blog/wp-content/uploads/2017/12/html-css.jpg) center / cover'}}>HTML/CSS Project1</CardTitle>
                 <CardText>
                     Describe own project...
                 </CardText>
@@ -24,6 +26,38 @@ class Projects extends Component {
                     <IconButton name="share" />
                 </CardMenu>
             </Card>
+
+                {/*Project2*/}
+                <Card shadow={0} style={{width: '450', margin: 'auto'}}>
+                    <CardTitle style={{color: '#fff', height: '176px', background: 'url(http://www.e2matrix.com/blog/wp-content/uploads/2017/12/html-css.jpg) center / cover'}}>HTML/CSS Project2</CardTitle>
+                    <CardText>
+                        Describe own project...
+                    </CardText>
+                    <CardActions border>
+                        <Button colored>GitHub</Button>
+                        <Button colored>CodePen</Button>
+                        <Button colored>LiveDemo</Button>
+                    </CardActions>
+                    <CardMenu style={{color: '#fff'}}>
+                        <IconButton name="share" />
+                    </CardMenu>
+                </Card>
+                {/*Project3*/}
+                <Card shadow={0} style={{width: '450', margin: 'auto'}}>
+                    <CardTitle style={{color: '#fff', height: '176px', background: 'url(http://www.e2matrix.com/blog/wp-content/uploads/2017/12/html-css.jpg) center / cover'}}>HTML/CSS Project3</CardTitle>
+                    <CardText>
+                        Describe own project...
+                    </CardText>
+                    <CardActions border>
+                        <Button colored>GitHub</Button>
+                        <Button colored>CodePen</Button>
+                        <Button colored>LiveDemo</Button>
+                    </CardActions>
+                    <CardMenu style={{color: '#fff'}}>
+                        <IconButton name="share" />
+                    </CardMenu>
+                </Card>
+                </div>
         )
     } else if (this.state.activeTab ===1) {
         return (
@@ -51,13 +85,11 @@ class Projects extends Component {
                     <Tab>Node.js</Tab>
                 </Tabs>
 
-                <section className="projects-grid">
-                    <Grid className="projects-grid">
+                    <Grid>
                         <Cell col={12}>
                             <div className="content">{this.ToggleCategories()}</div>
                         </Cell>
                     </Grid>
-                </section>
             </div>
         )
     }
