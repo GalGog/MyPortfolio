@@ -19,6 +19,12 @@
 .projects-grid{
   display: flex;
 }
+/*resume page css*/
+.resume-right-col{
+  background: gray;
+  color: black;
+  padding: 2em;
+}
 
 /*contact page css*/
 .contact-body {
