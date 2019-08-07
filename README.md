@@ -4,8 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Checkout this repo, install dependencies, then start the gulp process with the following:
 
 git clone https://github.com/GalGog/React-MDL.git
-> npm install
-> npm start
+- []npm install
+- [] npm start
 
 ## Not Familiar with Git?
 Click download .zip file. 
